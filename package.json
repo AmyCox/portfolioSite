@@ -9,11 +9,16 @@
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 styles.scss css/styles.css",
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output css/styles.min.css css/styles.css"
+
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.35.1"
+    "sass": "^1.35.1",
+    "node-sass": "^4.12.0",
+    "clean-css-cli": "^4.3.0"
   },
   "dependencies": {}
 }
