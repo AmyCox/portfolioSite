@@ -60,9 +60,12 @@ a:hover .icon-background {
   color: black;
 }
 
-@media screen and (max-width: 575px) {
+/* Using SCSS variables to store breakpoints */
+@media (max-width: 575px) {
   .socialwrap {
-    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

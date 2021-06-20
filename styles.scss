@@ -68,7 +68,7 @@
 $phone: 575px;
 
 
-@media (min-width: $phone) {
+@media (max-width: $phone) {
   .socialwrap {
     flex-direction: column;
     justify-content: center;
