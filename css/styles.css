@@ -60,4 +60,10 @@ a:hover .icon-background {
   color: black;
 }
 
+@media screen and (max-width: 575px) {
+  .socialwrap {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
