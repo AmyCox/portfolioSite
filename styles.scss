@@ -63,10 +63,15 @@
       color: black;
     }
   
-    
-    @media screen and (max-width: 575px) {
-      .socialwrap {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+
+    /* Using SCSS variables to store breakpoints */
+$phone: 575px;
+
+
+@media (min-width: $phone) {
+  .socialwrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
