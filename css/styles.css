@@ -18,7 +18,6 @@ body {
   padding-top: 10px;
   margin: 0;
   line-height: 1;
-  padding-bottom: 30%;
 }
 
 .title h3 {
@@ -35,7 +34,7 @@ body {
 .socialwrap {
   display: flex;
   flex-direction: row;
-  padding-top: 10%;
+  padding-top: 6%;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -45,6 +44,24 @@ body {
 .socialwrap a, .socialwrap .profile {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-container p {
+  font-family: "Montserrat";
+}
+
+.project-container a {
+  text-decoration: none;
+  border-style: 1px solid;
+}
+
+.project-container a:hover {
+  color: hotpink;
 }
 
 a:hover .icon-background {
